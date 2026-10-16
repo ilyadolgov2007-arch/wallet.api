@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Wallet
+﻿namespace Wallet
 {
     public class Transaction
     {

@@ -1,6 +1,4 @@
-﻿
-
-namespace Wallet
+﻿namespace Wallet
 {
     public enum TransactionType
     {
