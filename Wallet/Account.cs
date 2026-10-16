@@ -14,7 +14,7 @@ namespace Wallet
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentException("Имя пусто!");
+                throw new ArgumentException("Название счёта не может быть пустым");
             }
 
             Name = name;
@@ -55,28 +55,26 @@ namespace Wallet
 
         public Dictionary<string, decimal> GetExpensesByCategory()
         {
-            Dictionary<string, decimal> transactionsByCategory = _transactions
+            return _transactions
                 .Where(t => t.Type == TransactionType.Expense)
                 .GroupBy(t => t.Category)
                 .ToDictionary(g => g.Key, g => g.Sum(t => t.Amount));
-            return transactionsByCategory;
         }
 
         public Transaction? GetLargestExpense()
         {
-            Transaction? largestTransaction = _transactions
+            return _transactions
                 .Where(t => t.Type == TransactionType.Expense)
                 .OrderByDescending(t => t.Amount)
                 .FirstOrDefault();
-            return largestTransaction;
         }
 
         public IEnumerable<Transaction> GetTransactionsForPeriod(DateTime from, DateTime to)
         {
-            IEnumerable<Transaction> transactionsForPeriod = _transactions
+
+            return _transactions
                 .Where(t => t.Date >= from && t.Date < to.Date.AddDays(1))
                 .OrderByDescending(t => t.Date);
-            return transactionsForPeriod;
         }
     }
 }

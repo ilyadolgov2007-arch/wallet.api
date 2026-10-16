@@ -11,7 +11,7 @@ namespace Wallet
         public DateTime Date { get; }
         public TransactionType Type { get; }
 
-        
+
         public Transaction(decimal amount, string category, DateTime date, TransactionType type)
         {
             if (amount <= 0)
