@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Wallet.Api/Wallet.Api.csproj" Id="30e190c5-2fc9-42e2-bcff-ca50360ee9f2" />
   <Project Path="Wallet/Wallet.csproj" />
 </Solution>
