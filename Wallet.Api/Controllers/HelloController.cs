@@ -15,6 +15,10 @@ namespace Wallet.Api.Controllers
         [HttpGet("{name}")]
         public IActionResult SayHelloTo(string name)
         {
+            if(name.Length < 2)
+            {
+                return BadRequest($"Имя слишком короткое получено {name}") ;
+            }
             return Ok($"Привет, {name}!");
         }
 

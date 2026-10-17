@@ -1,6 +1,11 @@
 @Wallet.Api_HostAddress = http://localhost:5119
 
-GET {{Wallet.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+GET {{Wallet.Api_HostAddress}}/hello
 
 ###
+
+GET {{Wallet.Api_HostAddress}}/hello/Илья
+
+###
+
+GET {{Wallet.Api_HostAddress}}/hello/A
