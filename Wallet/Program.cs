@@ -1,4 +1,4 @@
-﻿using Wallet;
+﻿using Wallet.Core;
 
 Account account = new Account("Основной");
 

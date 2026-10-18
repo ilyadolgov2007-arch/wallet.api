@@ -1,4 +1,4 @@
-﻿namespace Wallet
+﻿namespace Wallet.Core
 {
     public enum TransactionType
     {

@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Wallet.Api/Wallet.Api.csproj" Id="30e190c5-2fc9-42e2-bcff-ca50360ee9f2" />
+  <Project Path="Wallet.Core/Wallet.Core.csproj" Id="809d381a-ec1b-446a-a59d-88e55e8f8cf5" />
   <Project Path="Wallet/Wallet.csproj" />
 </Solution>
