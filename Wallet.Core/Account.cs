@@ -4,6 +4,7 @@
     {
         public string Name { get; }
         public decimal Balance { get; private set; }
+        public readonly Guid Id;
         private readonly List<Transaction> _transactions = new();
         public IReadOnlyList<Transaction> Transactions => _transactions;
 
@@ -15,6 +16,8 @@
             }
 
             Name = name;
+
+            Id = Guid.NewGuid();
         }
 
         public void Deposit(decimal amount, string category, DateTime? date = null)

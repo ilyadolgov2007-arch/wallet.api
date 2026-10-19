@@ -9,3 +9,16 @@ GET {{Wallet.Api_HostAddress}}/hello/Илья
 ###
 
 GET {{Wallet.Api_HostAddress}}/hello/A
+
+###
+
+GET {{Wallet.Api_HostAddress}}/accounts
+
+###
+
+POST {{Wallet.Api_HostAddress}}/accounts
+Content-Type: application/json
+
+{
+  "name": "Основной"
+}
